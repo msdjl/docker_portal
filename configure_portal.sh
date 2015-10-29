@@ -6,7 +6,7 @@ fi
 # extract .war
 if [ -n $(ls ${CATALINA_HOME}/webapps/ | grep portal.war) ]; then
 unzip -d ${CATALINA_HOME}/webapps/portal ${CATALINA_HOME}/webapps/*portal.war
-rm *portal.war
+rm ${CATALINA_HOME}/webapps/*portal.war
 fi
 
 # change db address
