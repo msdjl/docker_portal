@@ -1,6 +1,6 @@
 # download portal
 if [ -z $(ls ${CATALINA_HOME}/webapps/ | grep portal) ]; then
-wget -O ${CATALINA_HOME}/webapps/portal.war http://10.36.6.10:9090/view/${PORTAL_BRANCH}/job/${PORTAL_JOB}/lastSuccessfulBuild/artifact/portal/dist/employee-portal.war
+wget -O ${CATALINA_HOME}/webapps/portal.war ${JENKINS_ARTIFACT_URL}
 fi
 
 # extract .war
